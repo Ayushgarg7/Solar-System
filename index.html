@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar system</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="mercury"></div>
+        <div class="venus"></div>
+        <div class="earth">
+            <div class="moon"></div>
+        </div>
+        <div class="mars"></div>
+        <div class="jupiter"></div>
+        <div class="saturn"></div>
+        <div class="uranus"></div>
+        <div class="neptune"></div>
+    </div>
+    <div class="zoom-controls">
+        <button id="zoom-in">Zoom In</button>
+        <button id="zoom-out">Zoom Out</button>
+    </div>
+</body>
+
+<script>
+    document.getElementById('zoom-in').addEventListener('click', function() {
+        document.querySelector('.container').classList.remove('zoomed');
+    });
+    document.getElementById('zoom-out').addEventListener('click', function() {
+        document.querySelector('.container').classList.add('zoomed');
+    });
+</script>
+
+</html>
